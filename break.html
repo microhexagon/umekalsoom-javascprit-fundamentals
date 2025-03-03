@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break and continue statements</title>
+</head>
+<body>
+    <script>
+//break statement
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    break;
+  }
+  console.log(i);
+}
+
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
+  if (sum >= 20) {
+    break;
+  }
+  sum += i;
+  console.log(`Added ${i} to sum`);
+}
+console.log(`Final sum: ${sum}`);
+
+//continue statement
+for (let i = 0; i < 10; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log(i);
+}
+
+let found = false;
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    found = true;
+    break;
+  }
+}
+if (found) {
+  console.log("Found 5");
+} else {
+  console.log("Did not find 5");
+}
+
+
+
+
+    </script>
+</body>
+</html>
